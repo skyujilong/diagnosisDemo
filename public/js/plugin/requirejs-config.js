@@ -1,0 +1,26 @@
+/**
+ * Created by lsc on 2014/11/28.
+ */
+require.config({
+    baseUrl:'js',
+    paths:{
+        'jquery':'plugin/jquery-1.9.1.min',
+        'template':'../template',
+        'domReady':'plugin/domReady',
+        'backbone':'plugin/backbone/backbone',
+        'localStorage':'plugin/backbone/backbone.localStorage',
+        'underscore':'plugin/backbone/underscore',
+        'marionette':'plugin/backbone/backbone.marionette'
+    },
+    shim:{
+        'backbone':{
+            deps:['underscore','jquery'],
+            exports:'Backbone'
+        },
+        'underscore':{
+            exports:'_'
+        },
+        'localStorage':['backbone'],
+        'marionette':['backbone']
+    }
+});
