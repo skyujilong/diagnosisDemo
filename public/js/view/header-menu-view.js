@@ -3,12 +3,14 @@
  */
 define([
     'marionette',
-    'view/header-menu-item-view'
-],function(Marionette,ItemView){
+    'view/header-menu-item-view',
+    'underscore',
+    'jquery'
+],function(Marionette,ItemView,_,$){
     return Marionette.CollectionView.extend({
-        initializer:function(collection){
-            this.collection = collection;
-        },
-        childView:ItemView
+        childView:ItemView,
+        onRender:function(){
+
+        }
     });
 });

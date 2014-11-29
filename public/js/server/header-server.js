@@ -10,17 +10,17 @@ define([
     var menuList = new MenuList();
     menuList.add(new MenuModel({
         name:'诊断',
-        url:'/diagnosis',
+        url:'#/diagnosis',
         isChecked:1
     }));
     menuList.add(new MenuModel({
         name:'题库',
-        url:'/questions',
+        url:'#/questions',
         isChecked:0
     }));
     menuList.add(new MenuModel({
         name:'考试',
-        url:'/exams',
+        url:'#/exams',
         isChecked:0
     }));
 

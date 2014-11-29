@@ -1,0 +1,2 @@
+/*TMODJS:{"version":7,"md5":"71930959f44b51ec7a08b0547e440ebc"}*/
+template('body/diagnosis-index','<!DOCTYPE html> <html> <head lang="en"> <meta charset="UTF-8"> <title></title> </head> <body> <div> <table> <thead> <tr> <th>num</th> </tr> <tr> <th>姓名</th> </tr> <tr> <th>性别</th> </tr> <tr> </tr> </thead> </table> </div> </body> </html>');
