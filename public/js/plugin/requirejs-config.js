@@ -4,13 +4,14 @@
 require.config({
     baseUrl:'js',
     paths:{
-        'jquery':'plugin/jquery-1.9.1.min',
-        'template':'../template',
-        'domReady':'plugin/domReady',
-        'backbone':'plugin/backbone/backbone',
-        'localStorage':'plugin/backbone/backbone.localStorage',
-        'underscore':'plugin/backbone/underscore',
-        'marionette':'plugin/backbone/backbone.marionette'
+        'jquery':'./plugin/jquery-1.9.1.min',
+        'template':'./../tpl/build/template',
+        'domReady':'./plugin/domReady',
+        'backbone':'./plugin/backbone/backbone',
+        'localStorage':'./plugin/backbone/backbone.localStorage',
+        'underscore':'./plugin/backbone/underscore',
+        'marionette':'./plugin/backbone/backbone.marionette',
+        'wreqr':'./plugin/backbone/backbone.wreqr'
     },
     shim:{
         'backbone':{
@@ -20,7 +21,10 @@ require.config({
         'underscore':{
             exports:'_'
         },
-        'localStorage':['backbone'],
-        'marionette':['backbone']
+        'localStorage':['localStorage'],
+        'marionette':{
+            deps:['backbone','wreqr'],
+            exports:'Marionette'
+        }
     }
 });
