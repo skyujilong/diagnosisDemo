@@ -11,7 +11,8 @@ require.config({
         'localStorage':'./plugin/backbone/backbone.localStorage',
         'underscore':'./plugin/backbone/underscore',
         'marionette':'./plugin/backbone/backbone.marionette',
-        'wreqr':'./plugin/backbone/backbone.wreqr'
+        'wreqr':'./plugin/backbone/backbone.wreqr',
+        'q':'./plugin/q'
     },
     shim:{
         'backbone':{
@@ -25,6 +26,9 @@ require.config({
         'marionette':{
             deps:['backbone','wreqr'],
             exports:'Marionette'
+        },
+        'q':{
+            exports:'Q'
         }
     }
 });

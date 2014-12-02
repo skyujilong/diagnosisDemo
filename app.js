@@ -8,6 +8,25 @@ app.set('views', path.join(__dirname, '/view'));
 app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.get('/getUserList',function(req,res){
+    res.json(200,{results:[
+        {
+            name:'yjl',
+            age:25,
+            sex:'man'
+        },
+        {
+            name:'fdp',
+            age:23,
+            sex:'man'
+        },
+        {
+            name:'qk',
+            age:26,
+            sex:'woman'
+        }
+    ]});
+});
 
 app.get('/getFirstData', function(req, res){
     res.json(200,{results:{

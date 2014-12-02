@@ -1,2 +1,2 @@
-/*TMODJS:{"version":7,"md5":"71930959f44b51ec7a08b0547e440ebc"}*/
-template('body/diagnosis-index','<!DOCTYPE html> <html> <head lang="en"> <meta charset="UTF-8"> <title></title> </head> <body> <div> <table> <thead> <tr> <th>num</th> </tr> <tr> <th>姓名</th> </tr> <tr> <th>性别</th> </tr> <tr> </tr> </thead> </table> </div> </body> </html>');
+/*TMODJS:{"version":28,"md5":"9f4cf266bfcb4c51ae19306e4c29e741"}*/
+template('body/diagnosis-index','<div> <input id="create-new-user" type="button" value="新建用户"> </div> <div id="user-info"> </div> <div class="none pa" style="top:50%;left:50%;margin-left:-150px;width:300px;margin-top:-50px;border:1px soid #3fa46a" id="edit-user"></div>');

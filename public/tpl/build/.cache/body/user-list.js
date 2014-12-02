@@ -1,0 +1,2 @@
+/*TMODJS:{"version":6,"md5":"9107ef9f43c6d318a67c730f76450087"}*/
+template('body/user-list','<table id="user-table"> <thead> <tr> <th class="w70">num</th> <th class="w70">姓名</th> <th class="w70">性别</th> <th class="w70">年龄</th> <th class="w70">操作</th> </tr> </thead> <tbody></tbody> </table>');

@@ -2,7 +2,15 @@
  * Created by lsc on 2014/11/28.
  */
 console.log('测试内容启动');
-require(['./app','backbone','server/header-server','router/router','jquery'],function(app,Backbone,HeadView,Router,$){
+require([
+    './app',
+    'backbone',
+    'server/header-server',
+    'router/router',
+    'jquery',
+    'view/diagonsis-layout',
+    'domReady!'
+],function(app,Backbone,HeadView,Router,$,DiagonsisLayout){
 
     app.addRegions({
         header:'#header',
@@ -12,6 +20,7 @@ require(['./app','backbone','server/header-server','router/router','jquery'],fun
     app.addInitializer(function(){
         //show不同的view  一个region对应多个不同的view
         this.header.show(HeadView);
+        this.innerCotent.show(new DiagonsisLayout());
         Backbone.history.start();
     });
     //初始化
