@@ -8,9 +8,6 @@ define([
     'jquery'
 ],function(Marionette,ItemView,_,$){
     return Marionette.CollectionView.extend({
-        childView:ItemView,
-        onRender:function(){
-
-        }
+        childView:ItemView
     });
 });

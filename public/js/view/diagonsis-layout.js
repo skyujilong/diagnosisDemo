@@ -9,7 +9,7 @@ define([
     'view/edit-user-view',
     'collection/user-list'
 ],function(Marionette,template,UserListView,EditUserView,userList){
-    return Marionette.LayoutView.extend({
+    var DiagonosisLayout = Marionette.LayoutView.extend({
         template:function(){
             return template('body/diagnosis-index');
         },
@@ -31,4 +31,6 @@ define([
             }));
         }
     });
+    var diagnosis = new DiagonosisLayout();
+    return diagnosis;
 });

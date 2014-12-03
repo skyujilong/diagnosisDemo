@@ -20,9 +20,6 @@ define([
         childViewContainer:'tbody',
         childViewOptions:function(model,index){
             model.set('index',index);
-        },
-        events:{
-
         }
     });
 });

@@ -10,7 +10,7 @@ require([
     'jquery',
     'view/diagonsis-layout',
     'domReady!'
-],function(app,Backbone,HeadView,Router,$,DiagonsisLayout){
+],function(app,Backbone,HeadView,Router,$,diagonsisLayout){
 
     app.addRegions({
         header:'#header',
@@ -20,7 +20,8 @@ require([
     app.addInitializer(function(){
         //show不同的view  一个region对应多个不同的view
         this.header.show(HeadView);
-        this.innerCotent.show(new DiagonsisLayout());
+        console.log(diagonsisLayout);
+        this.innerCotent.show(diagonsisLayout);
         Backbone.history.start();
     });
     //初始化
